@@ -1,16 +1,25 @@
-#my_list = [10,20,30,40,50,60,70,80,90,100]
+# simple challenge
+# extrcat 50 odd numbers from a list with out exceeding 2 lines of code
 
-#print(my_list[0])
-#print(my_list[1])
-#print(my_list[8])
+# nums = [50, -----  150]
 
-#print(my_list[-1])
+# output -- [51, 53, 55, 57 ---- 149]
 
-#print(my_list[-7])
+odd_num = []
 
-# set_fruits = {"apple", "banana", "cherry"}
-# set_fruits.add("orange")
-# print(set_fruits)
+for i in range(50, 150):
+    if i%2 != 0:
+        odd_num.append(i)
+        
+# print(odd_num)
+    
+    
+# list comprehension
 
-for i in range(1,21):
-    print (i , end=" ")
+# odd_num2 = [i for i in range(50, 150) if i%2 !=0]
+# print(odd_num2)
+
+# find out the squares of even numbers from 1, 20 in list
+
+squares_of_even = [i**3 for i in range(1, 21) if i%2 == 0]
+print(squares_of_even)
